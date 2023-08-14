@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--OutputText);
+    text-transform: uppercase;
+}
+
+:root {
+    --primary: #24232a;
+    --secondaryClr: #9386e3;
+    --OutputText: #b3b3b3;
+    --red: #f73c3c;
+    --yellow: #f7a13c;
+    --green: #8ee366;
+    --grey: #1a1822;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    background-color: var(--primary);
+    width: 541px;
+    Height: 600px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inputBox {
+    background-color: black;
+}
+
+.inputBox input[type="text"] {
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    padding: 12px 40px;
+    font-size: 25px;
+    font-weight: 700;
+    Width: 100%;
+    Height: 69px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.heading-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 40px 0px 40px;
+    text-align: center;
+}
+
+#rangeTxt {
+    color: var(--secondaryClr);
+    margin: -15px;
+    padding: 9px 16px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--grey);
+    width: 100%;
+    height: 5px;
+    outline: none;
+    transition: .2s ease;
+    margin-top: 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--grey);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid var(--secondaryClr);
+    outline: none;
+    transition: .2s ease;
+    cursor: grab;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid var(--secondaryClr);
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .2s;
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    text-align: center;
+    appearance: none;
+    background-color: var(--secondaryClr);
+}
+
+
+.range-of-char {
+    display: flex;
+    justify-content: center;
+    padding: 8px 40px;
+    text-align: center;
+}
+
+.checkboxes {
+    padding: 22px 40px;
+    font-weight: 600;
+}
+
+.chkbox {
+    display: flex;
+    /* Use flexbox to align items */
+    align-items: center;
+    /* Align items vertically */
+    margin-bottom: 25px;
+}
+
+.chkbox label {
+    padding: 0px;
+    margin-left: 20px;
+    /* Add a little spacing between checkbox and label */
+}
+
+
+.strenght-bar {
+    background-color: var(--grey);
+    padding: 8px 40px;
+    Width: 461px;
+    Height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 40px;
+    position: relative;
+}
+
+.strenght-bar h2 {
+    position: absolute;
+    left: 5%;
+}
+
+.indicators {
+    position: relative;
+    display: flex;
+    right: -40%;
+}
+
+.ind {
+    border: 2px solid var(--secondaryClr);
+    height: 35px;
+    background-color: var(--grey);
+    width: 18px;
+    margin: 0px 2px 0px 2px;
+}
+
+#genBtn {
+    padding: 8px 40px;
+    margin: 8px 40px;
+    Width: 461px;
+    Height: 69px;
+    background-color: transparent;
+    border: 2px solid var(--secondaryClr);
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+#genBtn:hover {
+    background-color: var(--secondaryClr);
+    color: var(--grey);
+}

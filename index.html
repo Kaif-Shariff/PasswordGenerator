@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate Password</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputBox">
+        <input type="text" id="passText" placeholder="Password..." readonly />
+      </div>
+
+      <div class="sub-container">
+        <div class="heading-line">
+          <h4>Password Length</h4>
+          <h2 id="rangeTxt">0</h2>
+        </div>
+        <div class="range-of-char">
+          <input
+            type="range"
+            name="charLength"
+            id="rangeBar"
+            value="6"
+            min="4"
+            max="20"
+          />
+        </div>
+
+        <div class="checkboxes">
+          <div class="chkbox">
+            <input type="checkbox" name="uppercase" id="ucase" />
+            <label for="uppercase">Include Uppercase</label>
+          </div>
+          <div class="chkbox">
+            <input type="checkbox" name="lowercase" id="lcase" />
+            <label for="lowercase">Include Lowercase</label>
+          </div>
+          <div class="chkbox">
+            <input type="checkbox" name="inc-num" id="include-num" />
+            <label for="inc-num">Include Number</label>
+          </div>
+          <div class="chkbox">
+            <input type="checkbox" name="inc-symb" id="symb" />
+            <label for="inc-symb">Include Symbols</label>
+          </div>
+        </div>
+
+        <div class="strenght-bar">
+          <h2>STRENGTH</h2>
+          <div class="indicators" title="Password Strength Indicator">
+            <div class="ind"></div>
+            <div class="ind"></div>
+            <div class="ind"></div>
+            <div class="ind"></div>
+            <div class="ind"></div>
+          </div>
+        </div>
+
+        <div class="generate-btn">
+          <button id="genBtn">GENERATE</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
