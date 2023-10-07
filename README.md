@@ -10,7 +10,7 @@
 - **Password can be lowercase**
 - **Password can be Number**
 - **Password can be Symbol**
-- **Password can be `@nYth1nG`**
+- **P@ssword can be AnYth1nG**
 
 ## Getting Started
 
