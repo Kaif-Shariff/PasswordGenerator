@@ -4,8 +4,13 @@
 
 
 ## Project Overview
-- **Created a Password Generator using HTML, CSS, JavaScript.**
-- **I created this project to demostrate my skill as programmer who can work with complex logic.**
+- **Visual Indicator for Password Strength**
+- **Password Lenght is set as 4 for default and go upto 20**
+- **Password can be UPPERCASE**
+- **Password can be lowercase**
+- **Password can be Number**
+- **Password can be Symbol**
+- **Password can be `@nYth1nG`**
 
 ## Getting Started
 
